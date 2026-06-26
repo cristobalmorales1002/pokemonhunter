@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 List<Pokemon> temp = new ArrayList<>();
                 for (int i = 0; i < profArray.length(); i++) {
                     JSONObject obj = profArray.getJSONObject(i);
-                    String name = obj.getString("name");
+                    String name = obj.getString("nombre");
                     
                     // Fetch from PokeAPI
                     String pokeJson = NetworkUtils.fetchJson(ApiConfig.POKEAPI_URL + name);
